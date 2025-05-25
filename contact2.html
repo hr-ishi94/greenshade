@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
     <meta charset="utf-8">
     <title>GREEN SHADE BUILDERS | ENGINEERS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="Green Shade Builders, construction company, civil engineering, building contractors, residential construction, commercial construction, structural design, building renovation, project management">
-    <meta name="description"
-        content="Green Shade Builders is a trusted construction and engineering firm specializing in residential, commercial, and infrastructure projects. We deliver innovative, sustainable, and cost-effective building solutions.">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
     <link href="img/greenshadesfavicon.png" rel="icon">
 
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
 
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet" />
 
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <!-- <link href="{% static 'css/style.min.css' %}" rel="stylesheet"> -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
 </head>
+
 
 <body>
     <!-- Navbar Start -->
+
+    <div class="container-fluid p-0 nav-bar">
+    
+        <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar d-none d-lg-block">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark ">
             <a href="index.html" class="navbar-brand px-lg-4  mx-4 mt-4">
                 <!-- <h1 class="m-0 display-4 text-uppercase text-white">KOPPEE</h1> -->
-                <img src="img/gs.png" class="company-logo  m-0" alt="GreenShade Builders">
+                <img src="{% static 'img/gs.png' %}" class="company-logo  m-0" alt="GreenShade Builders">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -44,15 +52,15 @@
                     <a href="#" class="nav-item nav-link">Service</a> <!--service.html-->
                     <a href="#" class="nav-item nav-link">Projects</a><!--menu.html-->
                     <a href="#" class="nav-item nav-link">Gallery</a> <!--reservation.html-->
-                    <a href="contact.html" class="nav-item nav-link   active">Contact</a><!--contact.html-->
+                    <a href="contact.html" class="nav-item nav-link active">Contact</a><!--contact.html-->
                     <a href="tel:+919778745982" class="nav-item nav-link phone-number">
                         <i class="fa fa-mobile" aria-hidden="true"></i>
                         +91 9778745982
                     </a>
-
+                    
                 </div>
             </div>
-
+            
         </nav>
     </div>
     <!-- Navbar End -->
@@ -60,21 +68,20 @@
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
-        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5"
-            style="min-height: 400px">
-            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Contact Us</h1>
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Contact</h1>
             <div class="d-inline-flex mb-lg-5">
-                <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+                <p class="m-0 text-white"><a class="text-white" href="index.html">Home</a></p>
                 <p class="m-0 text-white px-2">/</p>
-                <p class="m-0 text-white">Contact Us</p>
+                <p class="m-0 text-white">Contact</p>
             </div>
         </div>
     </div>
     <!-- Page Header End -->
 
 
-    <!-- About Start -->
-    <div class="container-fluid py-5">
+    <!-- Contact Start -->
+    <div class="container-fluid pt-5">
         <div class="container">
             <div class="section-title">
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Feel Free To Contact</h4>
@@ -142,27 +149,22 @@
             </div>
         </div>
     </div>
-    <!-- About End -->
-
- 
-
-
-
+    <!-- Contact End -->
 
 
     <!-- Footer Start -->
-   <div class="container-fluid footer text-white pt-5 px-0 position-relative overlay-top-white">
+    <div class="container-fluid footer text-white pt-5 px-0 position-relative overlay-top">
         <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Quick Links</h4>
                     <div class="">
 
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link font-weight-bolder ">About</a> <!--about.html -->
+                        <a href="index.html" class="nav-item nav-link font-weight-bolder">Home</a>
+                        <a href="about.html" class="nav-item nav-link font-weight-bolder">About</a> <!--about.html -->
                         <a href="#" class="nav-item nav-link font-weight-bolder">Service</a> <!--service.html-->
                         <a href="#" class="nav-item nav-link font-weight-bolder">Projects</a><!--menu.html-->
                         <a href="#" class="nav-item nav-link font-weight-bolder">Gallery</a> <!--reservation.html-->
-                        <a href="contact.html" class="nav-item nav-link font-weight-bolder text-white">Contact</a><!--contact.html-->
+                        <a href="contact.html" class="nav-item nav-link font-weight-bolder text-white ">Contact</a><!--contact.html-->
                         <!-- <a href="tel:+919778745982" class="nav-item nav-link phone-number">
                         <i class="fa fa-mobile" aria-hidden="true"></i>
                         +91 9778745982
@@ -189,8 +191,11 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h6 class="text-white text-uppercase">Monday - Saturday</h6>
-                <p>8:00 AM - 8:00 PM</p>
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Open Hours</h4>
+                <div>
+                    <h6 class="text-white text-uppercase">Monday - Saturday</h6>
+                    <p>8:00 AM - 8:00 PM</p>
+                </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h6 class="text-white text-uppercase mb-2" style="letter-spacing: 3px;">Get In Touch</h6>
@@ -215,19 +220,19 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/moment.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
 
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 
 </html>

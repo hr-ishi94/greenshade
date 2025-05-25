@@ -668,6 +668,7 @@ pre code {
   overflow-y: scroll;
 }
 
+
 .container,
 .overlay-top,
 .container-sm,
@@ -679,6 +680,26 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.container,
+.overlay-top-white,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+@media (min-width){
+  .about-poster{
+    
+  }
 }
 
 @media (min-width: 576px) {
@@ -9709,8 +9730,32 @@ h6,
   left: 0;
   z-index: 1;
 }
+.overlay-top-white::before,
+.overlay-bottom-white::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 15px;
+  left: 0;
+  z-index: 1;
+}
 
 
+
+.overlay-top-white::before {
+  top: -1px;
+  background: url(../img/overlay-top.png);
+}
+
+.overlay-top-white::before {
+  top: -1px;
+  background: url(../img/overlay-top.png);
+}
+
+.overlay-top::before {
+  top: -1px;
+  background: url(../img/overlay-top-green.png);
+}
 
 .overlay-top::before {
   top: -1px;
@@ -9718,6 +9763,10 @@ h6,
 }
 
 .overlay-bottom::after {
+  bottom: -1px;
+  background: url(../img/overlay-bottom.png);
+}
+.overlay-bottom-white::after {
   bottom: -1px;
   background: url(../img/overlay-bottom.png);
 }
